@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Park } from '../models/park.model';
 
 @Component({
   selector: 'app-park-list',

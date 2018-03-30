@@ -1,4 +1,23 @@
-# Nps
+# Recreate National Park Service Website using Angular
+
+## By Hannah Lee
+
+# Description
+
+## Epicodus Week 3 and 4 Independent Project 03/30/18 and 04/06/18
+
+## Behavior
+
+| Spec | Input | Output |
+| :---------------| :---------------| :---------------|
+| Spec | Input | Output |
+
+User Stories:
+
+1.
+
+2.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 

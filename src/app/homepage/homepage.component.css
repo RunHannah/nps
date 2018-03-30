@@ -4,3 +4,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+#women {
+  width: 25%;
+  height: 15%;
+  background-color: rgba(0,0,0,0.5);
+  position:absolute;
+  top: 15%;
+  color: white;
+}
+
+
+#women, id {
+  padding-left: 25px;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #385e3e;
+  border: white;
+  color: white;
+  /*text-decoration: none;*/
+}

@@ -16,7 +16,17 @@ User Stories:
 
 1. As a user, see a list of National Parks by state.
 
-2. For each state, see a list of parks by: name, city, state, and description.   
+2. As a user, select a state and see a list of parks by: name, city, state, and description.
+
+3. As a user, enter a keyword search in the search bar.
+
+4. As a user, search website from a menu bar.
+
+5. As a user, see a key topic NPS is supporting (ex: Women's History).
+
+6. As a user, see other current events, news, and related issues on home page.
+
+
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.

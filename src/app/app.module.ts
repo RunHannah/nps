@@ -6,6 +6,7 @@ import { FilterPipe } from './find-park.pipe';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ParkListComponent } from './park-list/park-list.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ParkListComponent } from './park-list/park-list.component';
     AppComponent,
     NavbarComponent,
     ParkListComponent,
-    FilterPipe
+    FilterPipe,
+    HomepageComponent
   ],
   imports: [
     BrowserModule

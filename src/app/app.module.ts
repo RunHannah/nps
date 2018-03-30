@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FilterPipe } from './find-park.pipe';
 
 
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { ParkListComponent } from './park-list/park-list.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ParkListComponent
+    ParkListComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule

@@ -2,11 +2,11 @@
   FIND A PARK
 </h3>
 
-<select style="text-align:center">
-  <option>By State...</option>
-  <option><a href="https://www.nps.gov/state/ca/index.htm">California</a></option>
-  <option><a href="https://www.nps.gov/state/or/index.htm">Oregon</a></option>
-  <option><a href="https://www.nps.gov/state/wa/index.htm">Washington</a></option>
+<select (change)="onChange($event.target.value)">
+  <option value="byState">By State...</option>
+  <option value="California">California</option>
+  <option value="Oregon">Oregon</option>
+  <option value="Washington">Washington</option>
 </select>
 
 

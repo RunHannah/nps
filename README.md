@@ -14,9 +14,9 @@
 
 User Stories:
 
-1. A
+1. As a user, see a list of National Parks by state.
 
-2.
+2. For each state, see a list of parks by: name, city, state, and description.   
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.

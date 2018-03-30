@@ -10,7 +10,7 @@ export class ParkListComponent {
   filterByState: string = "byState";
 
   onChange(optionFromMenu) {
-    this.filterByState = optionFrom Menu;
+    this.filterByState = optionFromMenu;
   }
 
 }

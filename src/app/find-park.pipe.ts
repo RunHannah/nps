@@ -2,7 +2,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 import {Park} from './models/park.model';
 
 @Pipe ({
-  name: 'filter'
+  name: 'filter',
   pure: false
 })
 
@@ -11,7 +11,7 @@ import {Park} from './models/park.model';
 
 export class FilterPipe implements PipeTransform {
   transform(list: Park[]){
-    
+
 
 
     // var output: Park[] = [];

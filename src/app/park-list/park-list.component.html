@@ -2,8 +2,17 @@
   FIND A PARK
 </h3>
 
+<select style="text-align:center">
+  <option>By State...</option>
+  <option><a href="https://www.nps.gov/state/ca/index.htm">California</a></option>
+  <option><a href="https://www.nps.gov/state/or/index.htm">Oregon</a></option>
+  <option><a href="https://www.nps.gov/state/wa/index.htm">Washington</a></option>
+</select>
 
+
+<li *ngFor="let park of masterParkList | filter">
+</li>
 
 <h5 style="text-align:center">
-  See All Parks & Search By Map
+  <a href="https://www.nps.gov/findapark/index.htm">See All Parks & Search By Map</a>
 </h5>

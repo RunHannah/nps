@@ -11,6 +11,9 @@ import {Park} from './models/park.model';
 
 export class FilterPipe implements PipeTransform {
   transform(list: Park[]){
+    
+
+
     // var output: Park[] = [];
     // for (var i = 0; i < input.length; i++) {
     //   if (input[i].done === false) {

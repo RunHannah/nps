@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ParkListComponent } from './park-list/park-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { BlogPostsComponent } from './blog-posts/blog-posts.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BlogPostsComponent } from './blog-posts/blog-posts.component';
     ParkListComponent,
     FilterPipe,
     HomepageComponent,
-    BlogPostsComponent
+    BlogPostsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

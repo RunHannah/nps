@@ -1,0 +1,7 @@
+.navbar-header {
+  margin-left: 20px;
+}
+
+.navbar-header, .nav {
+  color: white;
+}

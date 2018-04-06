@@ -1,4 +1,19 @@
-/*#global-footer {
+.container {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+hr {
+  border-color: white;
+}
+
+#global-footer {
   background-color: black;
   color: white;
-}*/
+  font-size: 12px;
+}
+
+#global-footer a {
+  text-decoration: none;
+  color: white;
+}

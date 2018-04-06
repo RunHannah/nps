@@ -14,9 +14,11 @@ export class BlogService {
     return this.blogs;
   }
 
-  addBlogs(newBlog: Blog) {
-    this.blogs.push(newBlog);
+  // addBlogs(newBlog: Blog) {
+  //   this.blogs.push(newBlog);
+  // }
+
+  getBlogById(blogId: string){
+   return this.database.object('blogs/' + blogId);
   }
-
-
 }

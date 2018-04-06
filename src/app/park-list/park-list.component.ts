@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-// import { Park } from '../models/park.model';
+
 
 @Component({
   selector: 'app-park-list',
@@ -11,11 +11,5 @@ export class ParkListComponent {
   // filterByState: string = "byState";
   @Input() childParks;
   constructor() {}
-
-  // onChange(optionFromMenu) {
-  //   this.filterByState = optionFromMenu;
-  // }
-
-
 
 }

@@ -1,34 +1,9 @@
-<h1>List of National Parks for:</h1>
-<h2> From {{childParks.data[0].states}} by the {{childParks.data[0].fullName}}</h2>
-<div *ngFor="let park of childParks.parks;" class="parks">
-  <p> {{park.fullName}}</p>
+<div class="container">
+  <h4>List of National Parks located in: {{childParks.data[0].states}} </h4>
+  <div *ngFor="let park of childParks.data;" class="parks">
+    <strong><p>{{park.fullName}}</p></strong>
+    <p>Website: <a href="{{park.url}}">{{park.url}}</a></p>
+    <p>{{park.description}}</p>
+    <hr>
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-<!-- <div class="parklist">
-  <h3 style="text-align:center">
-    FIND A PARK
-  </h3>
-
-  <select (change)="onChange($event.target.value)">
-    <option value="byState">By State...</option>
-    <option value="California">California</option>
-    <option value="Oregon">Oregon</option>
-    <option value="Washington">Washington</option>
-  </select>
-
-
-  <li *ngFor="let park of masterParkList | filter">
-  </li>
-
-  <h5 style="text-align:center">
-    <a href="https://www.nps.gov/findapark/index.htm">See All Parks & Search By Map</a>
-  </h5>
-</div> -->

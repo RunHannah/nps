@@ -28,8 +28,6 @@ export class BlogDetailComponent implements OnInit {
     this.blogId = urlParameters['id'];
   });
   this.blogToDisplay = this.blogService.getBlogById(this.blogId);
-  // console.log(this.projectToDisplay);
-  // console.log(this.projectId)
-;  }
+}
 
 }

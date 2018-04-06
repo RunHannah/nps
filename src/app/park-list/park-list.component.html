@@ -1,4 +1,18 @@
-<div class="parklist">
+<h1>List of National Parks for:</h1>
+<h2> From {{childParks.data[0].states}} by the {{childParks.data[0].fullName}}</h2>
+<div *ngFor="let park of childParks.parks;" class="parks">
+  <p> {{park.fullName}}</p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="parklist">
   <h3 style="text-align:center">
     FIND A PARK
   </h3>
@@ -17,4 +31,4 @@
   <h5 style="text-align:center">
     <a href="https://www.nps.gov/findapark/index.htm">See All Parks & Search By Map</a>
   </h5>
-</div>
+</div> -->

@@ -7,3 +7,8 @@
   </div>
   <button (click)="getParks(state.value)">Get Parks</button>
 </form>
+
+
+<div *ngIf="parksResult">
+  <app-park-list [childParks]="parksResult"></app-park-list>
+</div>

@@ -9,9 +9,6 @@ const appRoutes: Routes = [
   {
     path: '',
     component: BlogPostsComponent
-  }, {
-    path: 'homepage',
-    component: HomepageComponent
   }
 ];
 

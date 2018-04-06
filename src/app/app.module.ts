@@ -19,6 +19,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { routing } from './app.routing';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { StateFormComponent } from './state-form/state-form.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,7 +37,8 @@ export const firebaseConfig = {
     HomepageComponent,
     BlogPostsComponent,
     FooterComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    StateFormComponent
   ],
   imports: [
     BrowserModule,

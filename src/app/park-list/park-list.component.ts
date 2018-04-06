@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 
-
 @Component({
   selector: 'app-park-list',
   templateUrl: './park-list.component.html',

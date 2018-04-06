@@ -10,9 +10,9 @@
     </div>
 
     <div id="search">
-      <div class="search">
+      <!-- <div class="search">
         <button type="button" name="button"></button>
-      </div>
+      </div> -->
       <h4>Search for National Parks by State</h4>
 
       <form>
@@ -20,7 +20,7 @@
           <label for="state">State</label>
           <input type=text placeholder="Example: CA" #state>
         </div>
-        <button (click)="getParks(state.value); state.value='';">Get Parks</button>
+        <button routerLink='results' (click)="getParks(state.value); state.value='';">Get Parks</button>
       </form>
 
       <div *ngIf="parksResult">

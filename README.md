@@ -8,51 +8,69 @@
 
 ## Epicodus Week 3 and 4 Independent Project 03/30/18 and 04/06/18
 
-## Behavior
+## Deployed here:
 
-| Spec | Input | Output |
-| :---------------| :---------------| :---------------|
-| Spec | Input | Output |
+## Features
 
-User Stories:
+1. As a user, enter a state and return a list of National Parks by state and a description for each.
 
-1. As a user, see a list of National Parks by state.
+2. As a user, see a navigation bar with a hamburger icon that toggles and lists items to search on the site, for example: Plan Your Visit, Learn and Explore, and Get Involved.
 
-2. As a user, select a state and see a list of parks by: name, city, state, and description.
+3. As a user, see a hero image on the homepage displaying current theme for the organization.
 
-3. As a user, enter a keyword search in the search bar.
+4. As a user, see blog entries and click on each for additional information.
 
-4. As a user, search website from a menu bar.
-
-5. As a user, see a key topic NPS is supporting (ex: Women's History).
-
-6. As a user, see other current events, news, and related issues on home page.
+5. As a user, see a footer with informational and social media links.
 
 
+## Technologies Used
 
+```
+Application: Angular CLI, TypeScript, Bootstrap, HTML
+Environment: ng, npm, webpack, tslint
+Database: Firebase
+```
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+## Installation
 
-## Development server
+```
+$ git clone https://github.com/RunHannah/nps
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_Requires node.js; instructions to install:_ https://www.learnhowtoprogram.com/javascript/getting-started-with-javascript-2f9a73dc-b7f5-4a22-9101-e69d49f552ac/installing-node-js
 
-## Code scaffolding
+Install required npm packages and dependencies:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+$ npm install
+```
 
-## Build
+_Requires AngularFire; instructions to install and add credentials:_
+https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Once AngularFire is installed, create a database in Firebase by importing blog-posts.json.
 
-## Running unit tests
+Under the path src/app, create a file: api-keys.ts and place Firebase credentials:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+```
 
-## Running end-to-end tests
+Obtain a National Park Service API key from: https://www.nps.gov/subjects/developer/get-started.htm
+and place it in the api-keys.ts file:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+export const npsApiKey = "apiKey"
+```
 
-## Further help
+In the command line run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+$ ng serve --open
+```

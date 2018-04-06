@@ -8,6 +8,9 @@ import { BlogPostsComponent } from './blog-posts/blog-posts.component';
 const appRoutes: Routes = [
   {
     path: '',
+    component: BlogPostsComponent
+  }, {
+    path: 'homepage',
     component: HomepageComponent
   }
 ];

@@ -1,5 +1,36 @@
 <!-- NAVBAR -->
-<app-navbar></app-navbar>
+<div class="container">
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent" style="background-color: black;">
+      <div class="p-4">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="text-white">Plan Your Visit</h4>
+            <span class="text-white">Lorem Ipsum.</span>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-white">Learn and Explore</h4>
+            <span class="text-white">Lorem Ipsum</span>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-white">Get Involved</h4>
+            <span class="text-white">Lorem Ipsum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark" style="background-color: black;">
+      <div class="row">
+        <img alt="nps logo" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/US-NationalParkService-Logo.svg">
+        <p id="nps-logo"><a href="www.nps.gov">National Park Service</a></p>
+        <!-- <button type="button" name="search-button">Search</button> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</div>
 
 
 
@@ -12,4 +43,64 @@
 
 <!-- FOOTER -->
 
-<app-footer></app-footer>
+<footer id="global-footer" class="footer">
+  <div class="container">
+    <div id="search-footer">
+      <form class="global-search-form" action="/search/index.html" method="get">
+        <label class="global-search-label" for="site_search_footer">
+          <button type="button" class="js-toggle">"Search "<i class="fa fa-search"></i>
+          </button>
+        </label>
+        <div class="GlobalSearch-inputGroup" style="display: block; width: 0px;">
+          <input class="GlobalSearch-input" type="text" autocomplete="off" id="site_search_footer" name="query" placeholder="Keyword Search">
+          <button class="GlobalSearch-button GlobalSearch-submitButton btn-form btn-form-primary js-use-site-limit" type="submit">This Site</button>
+          <button class="GlobalSearch-button GlobalSearch-secondaryButton btn-form btn-form-primary" type="submit">All NPS</button>
+          <div></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <img class="GlobalFooter-printLogo print-only" src="" alt="NPS print format logo">
+    </div>
+
+    <div class="col-sm-12">
+      <img class="GlobalFooter-slogan" src="" alt="Experience Your America">
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-push-8">
+        <div class="GlobalFooter-nps-logo">
+          <div class="GlobalFooter-nps-logo-text" style="padding-right:30px;">
+            <a href="//www.nps.gov" id="anch_20">National Park Service</a>
+            <a href="//www.doi.gov" id="anch_21">U.S. Department of the Interior</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+      <ul class="general-links">
+        <a href="//www.nps.gov/aboutus/accessibility.htm" id="anch_23">Accessibility</a>
+        <a href="//www.nps.gov/aboutus/privacy.htm" id="anch_24">Privacy Policy</a>
+        <a href="//www.nps.gov/aboutus/foia/index.htm " id="anch_25">FOIA</a>
+        <a href="//www.nps.gov/aboutus/notices.htm" id="anch_26">Notices</a>
+        <a href="//www.nps.gov/aboutus/disclaimer.htm" id="anch_27">Disclaimer</a>
+        <a href="//www.nps.gov/aboutus/faqs.htm" id="anch_28">FAQ</a>
+        <a href="//www.doi.gov/pmb/eeo/no-fear-act" id="anch_29">No Fear Act</a>
+        <a href="//www.nps.gov/aboutus/contactus.htm" id="anch_30">Contact Us</a>
+        <a href="//www.usa.gov" id="anch_31">USA.gov</a>
+      </ul>
+
+      <ul id="social-media">
+        <a href="//www.facebook.com/nationalparkservice">Facebook</a>
+        <a href="//www.youtube.com/nationalparkservice">Youtube</a>
+        <a href="//www.twitter.com/nationalparkservice">Twitter</a>
+        <a href="//www.instagram.com/nationalparkservice">Instagram</a>
+        <a href="//www.flickr.com/nationalparkservice">Flickr</a>
+        <a href="//itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtistLegacy?cc=us&amp;id=216751324">iTunes</a>
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -18,7 +18,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'results',
-    component: StateFormComponent
+    component: ParkListComponent
   }
 ];
 

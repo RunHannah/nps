@@ -1,10 +1,33 @@
 <div class="jumbotron" id="rosie">
-  <div id="women">
-    <div id="content">
-      <p>A CELEBRATION OF WOMEN</p>
-      <h2>Challenging</h2>
-      <h2>Expectations</h2>
-      <button class="btn btn-lrg"><a href="https://www.nps.gov/subjects/tellingallamericansstories/womenshistory.htm">Find Out More</a></button>
+  <div class="container">
+    <div id="women">
+      <div id="content">
+        <p>A CELEBRATION OF WOMEN</p>
+        <h2>Challenging</h2>
+        <h2>Expectations</h2>
+        <button class="btn btn-lrg"><a href="https://www.nps.gov/subjects/tellingallamericansstories/womenshistory.htm">Find Out More</a></button>
+      </div>
     </div>
+
+    <div id="search">
+      <div class="search">
+        <button type="button" name="button"></button>
+      </div>
+      <h4>Search for National Parks by State</h4>
+
+      <form>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type=text placeholder="Example: CA" #state>
+        </div>
+        <button (click)="getParks(state.value); state.value='';">Get Parks</button>
+      </form>
+
+      <div *ngIf="parksResult">
+        <app-park-list [childParks]="parksResult"></app-park-list>
+      </div>
+    </div>
+
+
   </div>
 </div>

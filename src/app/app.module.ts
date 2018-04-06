@@ -19,7 +19,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 // import Blog Details Component...
 
-// import { routing } from './app.routing';
+import { routing } from './app.routing';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -44,7 +44,7 @@ export const firebaseConfig = {
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    // routing,
+    routing,
     AngularFireAuthModule
   ],
   providers: [],

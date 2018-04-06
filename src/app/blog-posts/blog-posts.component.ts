@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Blog } from '../models/blog.model';
 import { BlogService } from '../blog.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-// import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-posts',
@@ -12,10 +12,10 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class BlogPostsComponent implements OnInit {
   blogs: FirebaseListObservable<any[]>;
-  // currentRoute: string = this.router.url;
+  currentRoute: string = this.router.url;
 
   constructor(
-    // private router: Router,
+    private router: Router,
     private blogService: BlogService) { }
 
   ngOnInit() {

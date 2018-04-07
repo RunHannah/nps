@@ -10,13 +10,13 @@
   width: 25%;
   height: 15%;
   background-color: rgba(0,0,0,0.5);
-  position:absolute;
+  position: relative;
   top: 15%;
   color: white;
 }
 
 
-#women, id {
+#women {
   padding-left: 25px;
 }
 
@@ -34,7 +34,7 @@ button {
   width: 100%;
   height: 15%;
   background-color: rgba(0,0,0,0.5);
-  position:absolute;
+  position: relative;
   /*top: 15%;*/
   color: white;
 }

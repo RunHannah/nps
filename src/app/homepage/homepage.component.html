@@ -18,14 +18,14 @@
       <form>
         <div class="form-group">
           <label for="state">State</label>
-          <input type=text placeholder="Example: CA" #state>
+          <input type=text placeholder="Example: CA" [(ngModel)]="state" name="state">
         </div>
-        <button routerLink='results' (click)="getParks(state.value); state.value='';">Get Parks</button>
+        <button [routerLink]='["results"]' [queryParams]="{state:state}">Get Parks</button>
       </form>
 
-      <div *ngIf="parksResult">
+      <!-- <div *ngIf="parksResult">
         <app-park-list [childParks]="parksResult"></app-park-list>
-      </div>
+      </div> -->
     </div>
 
 

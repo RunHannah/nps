@@ -1,9 +1,11 @@
 <div class="container">
-  <h4>List of National Parks located in: {{childParks.data[0].states}} </h4>
-  <div *ngFor="let park of childParks.data;" class="parks">
+  <h4>List of National Parks located in: {{state}} </h4>
+  <div *ngFor="let park of parksResult.data;" class="parks">
     <strong><p>{{park.fullName}}</p></strong>
     <p>Website: <a href="{{park.url}}">{{park.url}}</a></p>
     <p>{{park.description}}</p>
     <hr>
   </div>
 </div>
+
+<h1>Results page works</h1>

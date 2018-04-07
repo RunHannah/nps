@@ -38,7 +38,6 @@ export const firebaseConfig = {
     BlogPostsComponent,
     FooterComponent,
     BlogDetailComponent,
-    StateFormComponent
   ],
   imports: [
     BrowserModule,

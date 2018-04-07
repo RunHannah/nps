@@ -13,12 +13,14 @@ import { NpsApiService } from '../nps-api.service';
 export class HomepageComponent {
 
   parksResult: any[]=null;
+  public state: string = "";
+
   constructor(private listOfParks: NpsApiService) { }
 
-  getParks(state: string) {
-    this.listOfParks.getByState(state).subscribe(response => {
-      this.parksResult = response.json();
-    });
-  }
+  // getParks(state: string) {
+  //   this.listOfParks.getByState(state).subscribe(response => {
+  //     this.parksResult = response.json();
+  //   });
+  // }
 
 }

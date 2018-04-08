@@ -1,10 +1,12 @@
-<div class="card" style="width: 50rem;">
-  <img class="card-img-top" src="{{(blogToDisplay | async)?.imageUrl}}" alt="Card image cap">
-  <div class="card-body">
-    <em><p class="card-text">{{(blogToDisplay | async)?.imageText}}</p></em>
-  </div>
-  <div class="card-body">
-    <h3 class="card-text">{{(blogToDisplay | async)?.pageTitle}}</h3>
-    <p class="card-text">{{(blogToDisplay | async)?.pageText}}</p>
+<div class="container">
+  <div class="card" style="width: 50rem;">
+    <img class="card-img-top" src="{{(blogToDisplay | async)?.imageUrl}}" alt="Card image cap">
+    <div class="card-body">
+      <em><p class="card-text">{{(blogToDisplay | async)?.imageText}}</p></em>
+    </div>
+    <div class="card-body">
+      <h3 class="card-text">{{(blogToDisplay | async)?.pageTitle}}</h3>
+      <p class="card-text">{{(blogToDisplay | async)?.pageText}}</p>
+    </div>
   </div>
 </div>

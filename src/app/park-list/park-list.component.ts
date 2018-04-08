@@ -11,7 +11,6 @@ import { NpsApiService } from '../nps-api.service';
   providers: [ NpsApiService ]
 })
 export class ParkListComponent implements OnInit {
-  // filterByState: string = "byState";
   parksResult: any[]=[];
   state = "";
   constructor(

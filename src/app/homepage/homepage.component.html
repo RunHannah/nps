@@ -1,33 +1,25 @@
-<div class="jumbotron" id="rosie">
+<div class="hero">
   <div class="container">
-    <div id="women">
-      <div id="content">
-        <p>A CELEBRATION OF WOMEN</p>
-        <h2>Challenging</h2>
-        <h2>Expectations</h2>
-        <button class="btn btn-lrg"><a href="https://www.nps.gov/subjects/tellingallamericansstories/womenshistory.htm">Find Out More</a></button>
+    <div id="sunset">
+      <p id="celebrate">Let's Celebrate</p>
+      <h2 id="nps-week">National Park Week</h2>
+      <button id="trip-button" class="btn btn-lrg"><a href="https://www.nps.gov/subjects/npscelebrates/national-park-week.htm">PLAN A TRIP</a></button>
+    </div>
+  </div>
+
+  <div id="search">
+    <h4>FIND A PARK</h4>
+
+    <form>
+      <div class="form-group">
+        <!-- <label for="state">State</label> -->
+        <input type=text placeholder="Enter State (example CA)" [(ngModel)]="state" name="state">
       </div>
-    </div>
+      <button class="btn btn-lrg" [routerLink]='["results"]' [queryParams]="{state:state}">SEARCH</button>
+    </form>
 
-    <div id="search">
-      <!-- <div class="search">
-        <button type="button" name="button"></button>
-      </div> -->
-      <h4>Search for National Parks by State</h4>
-
-      <form>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input type=text placeholder="Example: CA" [(ngModel)]="state" name="state">
-        </div>
-        <button [routerLink]='["results"]' [queryParams]="{state:state}">Get Parks</button>
-      </form>
-
-      <!-- <div *ngIf="parksResult">
-        <app-park-list [childParks]="parksResult"></app-park-list>
-      </div> -->
-    </div>
-
-
+    <!-- <div *ngIf="parksResult">
+    <app-park-list [childParks]="parksResult"></app-park-list>
+  </div> -->
   </div>
 </div>

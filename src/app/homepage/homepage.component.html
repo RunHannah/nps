@@ -8,14 +8,12 @@
   </div>
 
   <div id="search">
-    <h4>FIND A PARK</h4>
-
+    <p>FIND A PARK</p>
     <form>
       <div class="form-group">
-        <!-- <label for="state">State</label> -->
         <input type=text placeholder="Enter State (example CA)" [(ngModel)]="state" name="state">
       </div>
-      <button class="btn btn-lrg" [routerLink]='["results"]' [queryParams]="{state:state}">SEARCH</button>
+      <button class="btn btn-lrg" [routerLink]='["results"]' [queryParams]="{state:state}">SEE ALL PARKS</button>
     </form>
 
     <!-- <div *ngIf="parksResult">

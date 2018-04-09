@@ -8,7 +8,7 @@
 
 ## Epicodus Week 3 and 4 Independent Project 03/30/18 and 04/06/18
 
-## Deployed here:
+## Deployed here: https://national-park-service-clone.firebaseapp.com
 
   <img src="src/img/landing.png" alt="landing" style="width: 500px;"/>
 

@@ -28,7 +28,7 @@
 
 4. As a user, see blog entries and click on each for additional information.
 
-  <img src="src/img/blog-detail.png" alt="blog-detail" style="width: 400px;"/>
+  <img src="src/img/blog-detail.png" alt="blog-detail" style="width: 300px;"/>
 
 5. As a user, see a footer with informational and social media links.
 
@@ -40,6 +40,7 @@
 Application: Angular CLI, TypeScript, Bootstrap, HTML
 Environment: ng, npm, webpack, tslint
 Database: Firebase
+API: National Park Service
 ```
 
 ## Installation
@@ -59,9 +60,11 @@ $ npm install
 _Requires AngularFire; instructions to install and add credentials:_
 https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
 
-Once AngularFire is installed, create a database in Firebase by importing blog-posts.json.
+_Create a database in Firebase by importing the file blog-posts.json._
+Instructions to create a free account:
+  https://www.learnhowtoprogram.com/javascript/angular-extended/firebase-introduction-and-setup
 
-Under the path src/app, create a file: api-keys.ts and place Firebase credentials:
+Once Firebase database is setup, create the file: api-keys.ts under src/app path and copy and paste Firebase credentials using the following syntax :
 
 ```
 export var masterFirebaseConfig = {
@@ -74,7 +77,7 @@ export var masterFirebaseConfig = {
 ```
 
 Obtain a National Park Service API key from: https://www.nps.gov/subjects/developer/get-started.htm
-and place it in the api-keys.ts file:
+and copy and paste apiKey between the quotes in the api-keys.ts file:
 
 ```
 export const npsApiKey = "apiKey"

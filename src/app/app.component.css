@@ -1,5 +1,7 @@
 /*styling for navbar*/
-
+nav {
+  background: black;
+}
 
 .container {
   color: white;

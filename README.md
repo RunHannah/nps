@@ -10,18 +10,29 @@
 
 ## Deployed here:
 
+  <img src="src/img/landing.png" alt="landing" style="width: 500px;"/>
+
 ## Features
 
 1. As a user, enter a state and return a list of National Parks by state and a description for each.
 
+  <img src="src/img/list.png" alt="list" style="width: 500px;"/>
+
 2. As a user, see a navigation bar with a hamburger icon that toggles and lists items to search on the site, for example: Plan Your Visit, Learn and Explore, and Get Involved.
+
+  <img src="src/img/navbar.png" alt="navbar" style="width: 500px;">
 
 3. As a user, see a hero image on the homepage displaying current theme for the organization.
 
+  <img src="src/img/hero.png" alt="hero" style="width: 500px;"/>
+
 4. As a user, see blog entries and click on each for additional information.
+
+  <img src="src/img/blog-detail.png" alt="blog-detail" style="width: 400px;"/>
 
 5. As a user, see a footer with informational and social media links.
 
+  <img src="src/img/footer.png" alt="footer" style="width: 500px;"/>
 
 ## Technologies Used
 

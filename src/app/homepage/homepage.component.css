@@ -7,6 +7,7 @@
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
+  position: relative;
 }
 
 #sunset {
@@ -43,14 +44,14 @@ button {
 }
 
 #search {
-  margin-top: 184px;
   width: 100%;
   height: 28%;
   background-color: rgba(0,0,0,0.5);
-  position: relative;
   color: white;
   display: inline-block;
   text-align: center;
+  position: absolute;
+  bottom: 0px;
 }
 
 input {

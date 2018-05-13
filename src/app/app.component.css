@@ -3,12 +3,17 @@ nav {
   background: black;
 }
 
+.navbar {
+  position: relative;
+}
+
 .container {
   color: white;
 }
 
 button {
   margin-left: 830px;
+  position: absolute;
 }
 
 #nps-logo {

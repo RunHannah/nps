@@ -14,7 +14,10 @@ nav {
 button {
   margin-left: 830px;
   position: absolute;
+  font-size: 1em;
+  color: white !important;
 }
+
 
 #nps-logo {
   color: white;

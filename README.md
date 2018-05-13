@@ -1,14 +1,10 @@
-# Recreate National Park Service Website using Angular
+# Recreate National Park Service website using Angular5
+#### Epicodus Week 3 and 4 Independent Project 03/30/18 and 04/06/18
 
 ## By Hannah Lee
 
-# Description
-
-### Recreating National Park Service website: https://www.nps.gov
-
-## Epicodus Week 3 and 4 Independent Project 03/30/18 and 04/06/18
-
-## Deployed here: https://national-park-service-clone.firebaseapp.com
+#### Deployed here: https://national-park-service-clone.firebaseapp.com
+#### NPS.gov https://www.nps.gov
 
   <img src="src/img/landing.png" alt="landing" style="width: 500px;"/>
 
@@ -76,11 +72,18 @@ export var masterFirebaseConfig = {
   };
 ```
 
-Obtain a National Park Service API key from: https://www.nps.gov/subjects/developer/get-started.htm
-and copy and paste apiKey between the quotes in the api-keys.ts file:
+Obtain a National Park Service API key from: https://www.nps.gov/subjects/developer/get-started.htm <br>
+Under /src/app create a file: api-keys.ts <br>
+Copy and paste the following with apiKey between the quotes in the api-keys.ts file:
 
 ```
-export const npsApiKey = "apiKey"
+export const npsApiKey = "apiKey goes here"
+```
+
+Locate the .gitignore file and include the following path to be ignored:
+
+```
+/src/app/api-keys.ts
 ```
 
 In the command line run:
@@ -88,3 +91,5 @@ In the command line run:
 ```
 $ ng serve --open
 ```
+
+Navigate to http://localhost:4200/ from your browser.
